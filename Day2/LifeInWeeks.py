@@ -8,7 +8,7 @@ age = input("What is your current age?")
 age_as_int = int(age)
 
 # Calculate number of years left
-year_remaining = 100 - age_as_int
+year_remaining = 90 - age_as_int
 
 # Calculate number of Days left
 days_remaining = year_remaining * 365
