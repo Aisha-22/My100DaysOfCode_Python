@@ -9,10 +9,16 @@
 
 print("Welcome to the tip Calculator.")
 
-bill = float(input("What was the total bill? R"))
-tip = int(input("How much tip would you like to give? 10, 12, or 15?"))
-friends = int(input("How many people to split the bill?"))
-bill_with_tip = tip / 100 * bill + bill
-bill_per_person = bill_with_tip / friends
-final_amount = round(bill_per_person, 2)
+bill = float(input("What was the total bill? R")) #R400
+
+tip = int(input("How much tip would you like to give? 10, 12, or 15?")) #15%
+
+friends = int(input("How many people to split the bill?")) #3People
+
+bill_with_tip = tip / 100 * bill + bill #460.0
+
+bill_per_person = bill_with_tip / friends #153.3333333334
+
+final_amount = round(bill_per_person, 2) #153.33
+
 print(f"Each person should pay R{final_amount}")
